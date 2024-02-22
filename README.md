@@ -24,3 +24,6 @@ The project suggests the following approach:
 2- Reducing the distance: Teaching the agents to move towards the target and minimize the distance between their current position and the desired location.
 
 3- Moving with the right angle: Training the agents to move with the correct angle towards the target, ensuring precise movement along specific paths.
+
+# Results
+![App Screenshot](https://raw.githubusercontent.com/kiananvari/Cooperative-Load-Transportation-With-Two-Quadrotors-Using-Reinforcement-Learning/main/Test.gif)
