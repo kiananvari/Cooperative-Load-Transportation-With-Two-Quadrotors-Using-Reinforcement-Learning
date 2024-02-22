@@ -17,7 +17,7 @@ The project suggests the following approach:
 
 3- Incorporating Curriculum Learning to divide the learning process into stages, starting from simple tasks and gradually progressing to more difficult ones.
 
-The stages of the gradual learning approach are as follows:
+## The stages of the gradual learning approach are as follows:
 
 1- Establishing balance: Training the agents to maintain balance and stabilize themselves in the air.
 
