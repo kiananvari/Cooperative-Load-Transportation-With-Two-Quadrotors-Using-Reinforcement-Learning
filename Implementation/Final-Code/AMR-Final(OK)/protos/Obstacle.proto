@@ -1,0 +1,43 @@
+#VRML_SIM R2023b utf8
+# license: Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+# license url: https://cyberbotics.com/webots_assets_license
+
+PROTO Obstacle [
+  field SFVec3f translation 3 0 0.025
+  field SFColor color 1 0.501961 0.25098
+  field SFRotation rotation 1 1 0 0  # Add rotation field
+  field SFFloat density 200.0  # Add density field
+  field SFFloat height 1.0  # Add height field
+  field SFString name "obstacle"
+  field MFNode bodySlot    []   
+]
+{
+  Solid {
+    translation IS translation
+    rotation IS rotation  # Use the rotation field
+    children [
+        DEF BODY_SLOT Group {
+      children IS bodySlot
+    }
+      Shape {
+        appearance PBRAppearance {
+          baseColor IS color
+          metalness 0
+          roughness 0.4
+        }
+        geometry DEF CYLINDER2 Cylinder {
+          height IS height  # Use height field
+          radius 0.01
+          subdivision 24
+        }
+      }
+    ]
+    name IS name
+    model "obstacle"
+    boundingObject USE CYLINDER2
+    
+    physics Physics {
+      density IS density  # Use density to adjust mass
+    }
+  }
+}
