@@ -12,11 +12,15 @@ The Synchronous Quadcopter Control project aims to synchronize two carrier quadc
 The project suggests the following approach:
 
 1- Using deep learning techniques to train the quadcopters.
+
 2- Implementing the Proximal Policy Optimization (PPO) algorithm for reinforcement learning.
+
 3- Incorporating Curriculum Learning to divide the learning process into stages, starting from simple tasks and gradually progressing to more difficult ones.
 
 The stages of the gradual learning approach are as follows:
 
 1- Establishing balance: Training the agents to maintain balance and stabilize themselves in the air.
+
 2- Reducing the distance: Teaching the agents to move towards the target and minimize the distance between their current position and the desired location.
+
 3- Moving with the right angle: Training the agents to move with the correct angle towards the target, ensuring precise movement along specific paths.
